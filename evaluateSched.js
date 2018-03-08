@@ -78,11 +78,11 @@ function evaluateTimes(cal,sched,evaluation){
 			for(var i = startTime; i < endTime; i++){
 				var time;
 				if(i < 12){
-					time = i + 'am';
+					time = i + ':00am';
 				} else if(i > 12){
-					time = (i-12) + 'pm';
+					time = (i-12) + ':00pm';
 				}else {
-					time = '12pm';
+					time = '12:00pm';
 				}
 				evaluation.score += prefs[cal[time][day]];
 			}
